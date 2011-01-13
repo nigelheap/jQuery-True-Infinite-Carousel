@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>True Infinate</title>
+	<script src="lib/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
+	<style type="text/css">
+		body { font-family: Arial, Helvetica, sans-serif;}
+		#infiniteCarousel{ width: 800px; height: 200px;}
+		ul{ margin: 0; padding: 0;}
+		li{ float: left; height: 200px; width: 200px; list-style: none;}
+		li.i1{ background: #ccc;}
+		li.i2{ background: #999;}
+		li.i3{ background: #666;}
+		li.i4{ background: #333;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//$("#infiniteCarousel").trueInfinite({setStyle:false});
+			$("#infiniteCarousel").trueInfinite();
+		});
+	</script>
+		
+		
+</head>
+<body>
+	 	<div id="infiniteCarousel">
+ 		<div class="wrapper">
+ 			<ul>
+ 				<li class="i1"></li>
+ 				<li class="i2"></li>
+ 				<li class="i3"></li>
+ 				<li class="i4"></li>
+ 			</ul>
+ 		</div>
+ 	</div>
+</body>
+</html>
