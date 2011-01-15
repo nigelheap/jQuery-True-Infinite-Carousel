@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>True Infinate</title>
+	<link type="text/css" rel="stylesheet" href="../lib/styles.css" media="all" />
+	<script src="../lib/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="../lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
+	<style type="text/css">
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;}
+		#infiniteCarousel li{ height: 200px; width: 200px; list-style: none;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#infiniteCarousel").trueInfinite({
+				// this = nextItem : jQuery object
+				// first arg = current about to slide item : jQuery object
+				// second arg = next item to slide : jQuery object
+				// third arg = all the slides : jQuery object
+				// Forth arg = settings : object
+				before : function(current, next, itms, opts){ 
+					$("#output").prepend("BEFORE : Next Item: "+this.attr("class")+
+						" Current Item: "+current.attr("class")+
+						" Total Items: "+itms.size()+
+						"<br />"); 
+				},
+				after : function(current, next, itms, opts){ 
+					$("#output").prepend("AFTER : Next Item: "+this.attr("class")+
+						" Current Item: "+current.attr("class")+
+						" Total Items: "+itms.size()+
+						"<br />");
+				}
+			});
+		});
+	</script>
+		
+		
+</head>
+<body>
+		<h1>True Infinite Carousel</h1>
+		<h2>Callbacks</h2>
+		<h3><a href="../index.html">Back</a></h3>
+	 	<div id="infiniteCarousel">
+	 		<div class="wrapper">
+	 			<ul>
+	 				<li class="i1"></li>
+	 				<li class="i2"></li>
+	 				<li class="i3" style="width:300px;"></li>
+	 				<li class="i4"></li>
+	 			</ul>
+	 		</div>
+ 		</div>
+ 		<div id="output" style="height:100px; overflow:auto; margin-top:20px;">
+ 			
+ 		</div>
+ 		<code class="js">
+			$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;// this = nextItem : jQuery object<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;// first arg = current about to slide item : jQuery object<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;// second arg = next item to slide : jQuery object<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;// third arg = all the slides : jQuery object<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;// Forth arg = settings : object<br />
+			&nbsp;&nbsp;before : function(current, next, itms, opts){ <br />
+			&nbsp;&nbsp;&nbsp;$("#output").prepend("BEFORE : Next Item: "+this.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;" Current Item: "+current.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;" Total Items: "+itms.size()+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;br /&gt;"); <br />
+			&nbsp;&nbsp;}, <br />
+			&nbsp;&nbsp;after : function(current, next, itms, opts){ <br /> 
+			&nbsp;&nbsp;&nbsp;$("#output").prepend("AFTER : Next Item: "+this.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;" Current Item: "+current.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;" Total Items: "+itms.size()+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;br /&gt;"); <br />
+			&nbsp;&nbsp;} <br />
+			&nbsp;}); <br />
+			}); <br />
+		
+ 		</code>
+
+</body>
+</html>

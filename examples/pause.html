@@ -5,16 +5,16 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>True Infinate</title>
-	<link type="text/css" rel="stylesheet"  href="lib/styles.css" media="all" />
-	<script src="lib/jquery.js" type="text/javascript" language="javascript"></script>
-	<script src="lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
+	<link type="text/css" rel="stylesheet" href="../lib/styles.css" media="all" />
+	<script src="../lib/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="../lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
 	<style type="text/css">
-		#infiniteCarousel{ width: 800px; height: 200px; }
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;}
 		#infiniteCarousel li{ height: 200px; width: 200px; list-style: none;}
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#infiniteCarousel").trueInfinite();
+			$("#infiniteCarousel").trueInfinite({pauseOnHover:true});
 		});
 	</script>
 		
@@ -22,6 +22,8 @@
 </head>
 <body>
 		<h1>True Infinite Carousel</h1>
+		<h2>Reverse</h2>
+		<h3><a href="../index.html">Back</a></h3>
 	 	<div id="infiniteCarousel">
 	 		<div class="wrapper">
 	 			<ul>
@@ -32,12 +34,11 @@
 	 			</ul>
 	 		</div>
  		</div>
- 		<ul class="menu">
- 			<li><a href="examples/custom-styles.html">Custom Styles</a></li>
- 			<li><a href="examples/reverse.html">Reverse</a></li>
- 			<li><a href="examples/pause.html">Pause On Hover</a></li>
- 			<li><a href="examples/callbacks.html">Callbacks</a></li>
- 			<li><a href="options.html">Options Referece</a></li>
- 		</ul>
+ 		<code class="js">
+	 		$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({pauseOnHover:true});<br />
+			});			
+ 		</code>
+
 </body>
 </html>
