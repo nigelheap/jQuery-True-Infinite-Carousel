@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>True Infinate</title>
+	<link type="text/css" rel="stylesheet" href="../lib/styles.css" media="all" />
+	<script src="../lib/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="../lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
+	<style type="text/css">
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;}
+		#infiniteCarousel .wrapper{ position: absolute; left: 0; overflow: visible; width: 1100px;}
+		#infiniteCarousel ul{ margin: 0; padding: 0;}
+		#infiniteCarousel li{ float: left; height: 200px; width: 200px; list-style: none;}
+		li.i1{ background: #ccc;} li.i2{ background: #999;}
+		li.i3{ background: #666;} li.i4{ background: #333;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#infiniteCarousel").trueInfinite({setStyle:false});
+		});
+	</script>
+		
+		
+</head>
+<body>
+		<h1>True Infinite Carousel</h1>
+		<h2>Custom Styles</h2>
+		<h3><a href="../index.html">Back</a></h3>
+	 	<div id="infiniteCarousel">
+	 		<div class="wrapper">
+	 			<ul>
+	 				<li class="i1"></li>
+	 				<li class="i2"></li>
+	 				<li class="i3" style="width:300px;"></li>
+	 				<li class="i4"></li>
+	 			</ul>
+	 		</div>
+ 		</div>
+ 		<code class="js">
+	 		$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({setStyle:false});<br />
+			});			
+ 		</code>
+ 		<code class="css">
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;} <br />
+		#infiniteCarousel .wrapper{ position: absolute; left: 0; overflow: visible; width: 1100px;} <br />
+		#infiniteCarousel ul{ margin: 0; padding: 0;} <br />
+		#infiniteCarousel li{ float: left; height: 200px; width: 200px; list-style: none;} <br />
+		li.i1{ background: #ccc;} li.i2{ background: #999;} <br />
+		li.i3{ background: #666;} li.i4{ background: #333;} <br />
+		</code>
+</body>
+</html>
