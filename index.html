@@ -9,7 +9,8 @@
 	<script src="lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
 	<style type="text/css">
 		body { font-family: Arial, Helvetica, sans-serif;}
-		#infiniteCarousel{ width: 800px; height: 200px;}
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;}
+		.wrapper{ position: absolute; left: 0; overflow: visible; width: 1100px;}
 		ul{ margin: 0; padding: 0;}
 		li{ float: left; height: 200px; width: 200px; list-style: none;}
 		li.i1{ background: #ccc;}
@@ -20,7 +21,8 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			//$("#infiniteCarousel").trueInfinite({setStyle:false});
-			$("#infiniteCarousel").trueInfinite();
+			$("#infiniteCarousel").trueInfinite({direction:'reverse'});
+			//$("#infiniteCarousel").trueInfinite();
 		});
 	</script>
 		
@@ -32,7 +34,7 @@
  			<ul>
  				<li class="i1"></li>
  				<li class="i2"></li>
- 				<li class="i3"></li>
+ 				<li class="i3" style="width:300px;"></li>
  				<li class="i4"></li>
  			</ul>
  		</div>
