@@ -14,7 +14,7 @@
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#infiniteCarousel").trueInfinite({direction:"reverse"});
+			$("#infiniteCarousel").trueInfinite({timeout:8000});
 		});
 	</script>
 		
@@ -24,7 +24,7 @@
 	<div class="container">
 		<h3 class="back"><a href="../index.html">Back</a></h3>
 		<h1>True Infinite Carousel</h1>
-		<h2>Reverse</h2>
+		<h2>Callbacks</h2>
 	 	<div id="infiniteCarousel">
 	 		<div class="wrapper">
 	 			<ul>
@@ -36,12 +36,12 @@
 	 		</div>
  		</div>
  		<div class="description">
- 			<p>Turning the animation around.</p>
+ 			<p>Delay before animation starts. Defaults to onLoad</p>
  		</div>
  		<code class="js">
-	 		$(document).ready(function(){<br />
-			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({direction:"reverse"});<br />
-			});			
+			$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({timeout:8000});<br />
+			});		
  		</code>
 	</div>
 </body>

@@ -8,22 +8,13 @@
 	<link type="text/css" rel="stylesheet"  href="lib/styles.css" media="all" />
 	<script src="lib/jquery.js" type="text/javascript" language="javascript"></script>
 	<script src="lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
-	<style type="text/css">
-		#infiniteCarousel{ width: 800px; height: 200px; }
-		#infiniteCarousel li{ height: 200px; width: 200px; list-style: none;}
-	</style>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#infiniteCarousel").trueInfinite();
-		});
-	</script>
-		
 		
 </head>
 <body>
+	<div class="container">
+		<h3 class="back"><a href="index.html">Back</a></h3>
 		<h1>True Infinite Carousel</h1>
 		<h2>Options Referece</h2>
-		<h3><a href="index.html">Back</a></h3>
 	 	<code class="js">
 			time&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3000, - Time between slides<br />
 			speed&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500, - Speed of transition<br />
@@ -31,8 +22,8 @@
 			direction&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"forward", - Direction of slides<br />
 			setStyle&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;true, - Is the js setting the style?<br />
 			setDimensions&nbsp;:&nbsp;&nbsp;&nbsp;false, - Set dimensions from the first item. This is only works if setStyle is true.<br />
-			itemHeight&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100, - Item height default px other wise eg: '2em' - only works if no css set and setStyle is true.<br />
-			itemWidth&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100, - Item width default px other wise eg: '2em' - only works if no css set and setStyle is true.<br />
+			itemHeight&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100, - Item height default px other wise eg: '2em' - if no css set and setStyle is true.<br />
+			itemWidth&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100, - Item width default px other wise eg: '2em' - if no css set and setStyle is true.<br />
 			wrapperElement&nbsp;:&nbsp;&nbsp;'div', - HTML element inside the called box<br />
 			sliderElement&nbsp;:&nbsp;&nbsp;&nbsp;'ul', - Item container normally a ul or ol<br />
 			itemElement&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'li', - Item element<br />
@@ -43,7 +34,9 @@
  			<li><a href="examples/reverse.html">Reverse</a></li>
  			<li><a href="examples/pause.html">Pause On Hover</a></li>
  			<li><a href="examples/callbacks.html">Callbacks</a></li>
+ 			<li><a href="examples/timeout.html">Timeout</a></li>
  			<li><a href="options.html">Options Reference</a></li>
  		</ul>
+ 	</div>
 </body>
 </html>

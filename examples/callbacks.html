@@ -15,6 +15,8 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#infiniteCarousel").trueInfinite({
+				time : 7000, // lets slow the timing down to see whats going on.
+				speed : 3000, // lets slow the speed down to see whats going on.
 				// this = nextItem : jQuery object
 				// first arg = current about to slide item : jQuery object
 				// second arg = next item to slide : jQuery object
@@ -39,9 +41,10 @@
 		
 </head>
 <body>
+	<div class="container">
+		<h3 class="back"><a href="../index.html">Back</a></h3>
 		<h1>True Infinite Carousel</h1>
 		<h2>Callbacks</h2>
-		<h3><a href="../index.html">Back</a></h3>
 	 	<div id="infiniteCarousel">
 	 		<div class="wrapper">
 	 			<ul>
@@ -58,6 +61,8 @@
  		<code class="js">
 			$(document).ready(function(){<br />
 			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({<br />
+			&nbsp;&nbsp;time : 7000, // lets slow the timing down to see whats going on.<br />
+			&nbsp;&nbsp;speed : 3000, // lets slow the speed down to see whats going on.<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;// this = nextItem : jQuery object<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;// first arg = current about to slide item : jQuery object<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;// second arg = next item to slide : jQuery object<br />
@@ -79,6 +84,6 @@
 			}); <br />
 		
  		</code>
-
+	</div>
 </body>
 </html>
