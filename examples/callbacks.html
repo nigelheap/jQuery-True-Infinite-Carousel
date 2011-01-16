@@ -33,6 +33,16 @@
 						" Current Item: "+current.attr("class")+
 						" Total Items: "+itms.size()+
 						"<br />");
+				},
+				// this = first item
+				// first arg = all slides
+				// second arg = settings : object
+				start : function(items, opts){
+					$("#output").prepend("STARTED").css({
+						border:'solid 1px #666',
+						padding: '10px'
+					});
+					
 				}
 			});
 		});
@@ -79,10 +89,17 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;" Current Item: "+current.attr("class")+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;" Total Items: "+itms.size()+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;br /&gt;"); <br />
+			&nbsp;&nbsp;}, <br />
+			&nbsp;&nbsp;// this = first item <br />
+			&nbsp;&nbsp;// first arg = all slides <br />
+			&nbsp;&nbsp;// second arg = settings : object <br />
+			&nbsp;&nbsp;start : function(items, opts){ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;$("#output").prepend("STARTED").css({border:'solid 1px #666',  <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;}); <br />	
 			&nbsp;&nbsp;} <br />
 			&nbsp;}); <br />
 			}); <br />
-		
+
  		</code>
 	</div>
 </body>
