@@ -15,12 +15,13 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#infiniteCarousel").trueInfinite({
-				time:0
+				time:0 // Set time to 0 to stop animation
 			});
-			
+			// Adding prev binding to link
 			$("#prev").click(function(){
 				$("#infiniteCarousel").trueInfinite("prev");
 			});
+			// Adding next binding to link
 			$("#next").click(function(){
 				$("#infiniteCarousel").trueInfinite("next");
 			});
@@ -50,9 +51,19 @@
  			Use navigation to change items.</p>
  		</div>
  		<code class="js">
-	 		$(document).ready(function(){<br />
-			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({time:0});<br />
-			});			
+			$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;time:0 // Set time to 0 to stop animation<br />
+			&nbsp;&nbsp;});<br />
+			&nbsp;&nbsp;// Adding prev binding to link<br />
+			&nbsp;&nbsp;$("#prev").click(function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite("prev");<br />
+			&nbsp;&nbsp;});<br />
+			&nbsp;&nbsp;// Adding next binding to link<br />
+			&nbsp;&nbsp;$("#next").click(function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite("next");<br />
+			&nbsp;&nbsp;});<br />
+			});		
  		</code>
 	</div>
 </body>
