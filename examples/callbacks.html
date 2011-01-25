@@ -23,22 +23,24 @@
 				// third arg = all the slides : jQuery object
 				// Forth arg = settings : object
 				before : function(current, next, itms, opts){ 
-					$("#output").prepend("BEFORE : Next Item: "+this.attr("class")+
+					$("#output").prepend('<div class="blue">'+
+						"BEFORE : Next Item: "+this.attr("class")+
 						" Current Item: "+current.attr("class")+
 						" Total Items: "+itms.size()+
-						"<br />"); 
+						"</div>"); 
 				},
 				after : function(current, next, itms, opts){ 
-					$("#output").prepend("AFTER : Next Item: "+this.attr("class")+
+					$("#output").prepend('<div class="green">'+
+						"AFTER : Next Item: "+this.attr("class")+
 						" Current Item: "+current.attr("class")+
 						" Total Items: "+itms.size()+
-						"<br />");
+						"</div>");
 				},
 				// this = first item
 				// first arg = all slides
 				// second arg = settings : object
 				start : function(items, opts){
-					$("#output").prepend("STARTED").css({
+					$("#output").prepend('<div class="red">STARTED</div>').css({
 						border:'solid 1px #666',
 						padding: '10px'
 					});
@@ -79,22 +81,24 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;// third arg = all the slides : jQuery object<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;// Forth arg = settings : object<br />
 			&nbsp;&nbsp;before : function(current, next, itms, opts){ <br />
-			&nbsp;&nbsp;&nbsp;$("#output").prepend("BEFORE : Next Item: "+this.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;$("#output").prepend('&lt;div class="blue"&gt;'+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"BEFORE : Next Item: "+this.attr("class")+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;" Current Item: "+current.attr("class")+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;" Total Items: "+itms.size()+ <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;br /&gt;"); <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;/div&gt;"); <br />
 			&nbsp;&nbsp;}, <br />
 			&nbsp;&nbsp;after : function(current, next, itms, opts){ <br /> 
-			&nbsp;&nbsp;&nbsp;$("#output").prepend("AFTER : Next Item: "+this.attr("class")+ <br />
+			&nbsp;&nbsp;&nbsp;$("#output").prepend('&lt;div class="green"&gt;'+ <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"AFTER : Next Item: "+this.attr("class")+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;" Current Item: "+current.attr("class")+ <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;" Total Items: "+itms.size()+ <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;br /&gt;"); <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;"&lt;/div&gt;"); <br />
 			&nbsp;&nbsp;}, <br />
 			&nbsp;&nbsp;// this = first item <br />
 			&nbsp;&nbsp;// first arg = all slides <br />
 			&nbsp;&nbsp;// second arg = settings : object <br />
 			&nbsp;&nbsp;start : function(items, opts){ <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;$("#output").prepend("STARTED").css({border:'solid 1px #666',  <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;$("#output").prepend('&lt;div class="red">STARTED&lt;/div>').css({border:'solid 1px #666',  <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;}); <br />	
 			&nbsp;&nbsp;} <br />
 			&nbsp;}); <br />

@@ -23,3 +23,7 @@ li.i3{ background: #666;} li.i4{ background: #333;}
 p{ line-height: 1.3;}
 .description{ color: #666;}
 #output{ line-height: 1.3;}
+
+.red { color: red;}
+.blue { color: blue;}
+.green { color: green;}
