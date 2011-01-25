@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>True Infinate</title>
+	<link type="text/css" rel="stylesheet" href="../lib/styles.css" media="all" />
+	<script src="../lib/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="../lib/jquery.trueinfinite.js" type="text/javascript" language="javascript"></script>
+	<style type="text/css">
+		#infiniteCarousel{ width: 800px; height: 200px; position: relative; overflow: hidden;}
+		#infiniteCarousel li{ height: 200px; width: 200px; list-style: none;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#infiniteCarousel").trueInfinite({
+				time:0
+			});
+			
+			$("#prev").click(function(){
+				$("#infiniteCarousel").trueInfinite("prev");
+			});
+			$("#next").click(function(){
+				$("#infiniteCarousel").trueInfinite("next");
+			});
+		});
+	</script>
+		
+		
+</head>
+<body>
+	<div class="container">
+		<h3 class="back"><a href="../index.html">Back</a></h3>
+		<h1>True Infinite Carousel</h1>
+		<h2>Reverse</h2>
+	 	<div id="infiniteCarousel">
+	 		<div class="wrapper">
+	 			<ul>
+	 				<li class="i1"></li>
+	 				<li class="i2"></li>
+	 				<li class="i3" style="width:300px;"></li>
+	 				<li class="i4"></li>
+	 			</ul>
+	 		</div>
+ 		</div>
+ 		<div class="description">
+ 			<p><a href="#prev" id="prev">Prev</a> - 
+ 			<a href="#next" id="next">Next</a> 
+ 			Use navigation to change items.</p>
+ 		</div>
+ 		<code class="js">
+	 		$(document).ready(function(){<br />
+			&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite({time:0});<br />
+			});			
+ 		</code>
+	</div>
+</body>
+</html>
