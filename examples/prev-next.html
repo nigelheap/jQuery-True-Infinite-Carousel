@@ -20,10 +20,12 @@
 			// Adding prev binding to link
 			$("#prev").click(function(){
 				$("#infiniteCarousel").trueInfinite("prev");
+				return false;
 			});
 			// Adding next binding to link
 			$("#next").click(function(){
 				$("#infiniteCarousel").trueInfinite("next");
+				return false;
 			});
 		});
 	</script>
@@ -58,10 +60,12 @@
 			&nbsp;&nbsp;// Adding prev binding to link<br />
 			&nbsp;&nbsp;$("#prev").click(function(){<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite("prev");<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;return false;<br />
 			&nbsp;&nbsp;});<br />
 			&nbsp;&nbsp;// Adding next binding to link<br />
 			&nbsp;&nbsp;$("#next").click(function(){<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;$("#infiniteCarousel").trueInfinite("next");<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;return false;<br />
 			&nbsp;&nbsp;});<br />
 			});		
  		</code>
